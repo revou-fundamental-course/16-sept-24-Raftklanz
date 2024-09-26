@@ -1,0 +1,214 @@
+/* ini CSS */
+/* body */
+body {background-color: aqua;}
+/* logo */
+.logo-icon {
+    height: 75px;
+    width: 75px;
+    background-image: url(../assets/logo2.png);
+    background-size: contain;
+    background-position: center;
+}
+/* header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../assets/banner4.png);
+}
+/* bar navigasi */
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+nav>a {
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+/* gambar utama */
+.main-banner {
+    height: 578px;    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gambar1 {
+    background-image: url(../assets/gambar1.jpg);
+}
+.gambar2 {
+    background-image: url(../assets/gambar2.jpg);
+}
+.gambar3 {
+    background-image: url(../assets/gambar3.jpg);
+}
+.gambar4 {
+    background-image: url(../assets/gambar4.jpg);
+}
+.gambar5 {
+    background-image: url(../assets/gambar5.jpg);
+}
+.gambar6 {
+    background-image: url(../assets/gambar6.jpg);
+}
+
+/* lokasi */
+.lokasi1 {
+    height: 150px;
+    width: 150px;
+    background-image: url(../assets/monas.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    background-repeat: no-repeat;
+}
+.lokasi2 {
+    height: 150px;
+    width: 150px;
+    background-image: url(../assets/musi.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    background-repeat: no-repeat;
+    }
+.lokasi3 {
+    height: 150px;
+    width: 150px;
+    background-image: url(../assets/surabaya.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    background-repeat: no-repeat;
+        }
+
+.container-lokasi {
+    display: flex;
+    justify-content: space-around;
+}
+.container-lokasi > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* jenis ikan */
+.container-jenis-ikan {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.container-jenis-ikan > div{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(23, 207, 85);
+}
+
+.container-jenis-ikan > article {
+    display: flex;
+    flex-direction: column;
+    width: 150x;
+    align-items: center;
+    text-align: justify;
+    background-color: rgb(23, 207, 85);
+}
+
+.container-konten1 {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.container-konten2 {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.container-konten3 {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.koi {
+    height: 150px;
+    width: 150px;
+    background-image: url(../assets/koi.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    background-repeat: no-repeat;
+}
+.oscar {
+    height: 150px;
+    width: 150px;
+    background-image: url(../assets/oscar.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    background-repeat: no-repeat;
+}
+.p-bass {
+    height: 150px;
+    width: 150px;
+    background-image: url(../assets/p-bass.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    background-repeat: no-repeat;
+}
+/* form web site */
+.container-form {
+    display: flex;
+    justify-content: space-around;
+}
+.input-form {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+.label-nama {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+.label-tgl {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+.label-gender {
+    display: flex;
+    margin: 5px;
+}
+.label-keterangan {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+.label-alamat {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+/* footer */
+.copyright {
+    text-align: center;
+}
+/* responsive */
+@media only screen and (max-width: 600px) {
+    .main-header{
+        flex-direction: column;
+    }
+    nav {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo-icon {
+        margin-bottom: 10px;
+    }
+}

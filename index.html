@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mini Project Faisal Aditya</title> 
+        <link rel="stylesheet" href="css\style.css">
+    </head>
+    <body style="margin: 0px;">
+        <header class="main-header">
+            <!-- logo website -->
+            <a href="index.html" class="logo-icon"></a>
+            <!-- bar navigasi -->
+            <nav>
+                <a href="#section-home">Home</a>
+                <a href="#lokasi-toko">Lokasi Toko</a>
+                <a href="#jenis-ikan">Jenis Ikan</a>
+                <a href="#lembar-pemesanan">Pemesanan</a>
+            </nav>
+
+        </header>
+        <hr>
+        <main>
+            <!-- halaman utama -->
+            <section id="section-home" class="section-home">
+                <header>
+                    <h1>Hi <span id="home-name">User</span>, Selamat datang di Zagas fisheries</h1>
+                </header>
+                <article>
+                    <h3>Website untuk membeli ikan hias air tawar secara online.</h3>
+                    <div class="main-banner gambar1"></div>
+                    <div class="main-banner gambar2"></div>
+                    <div class="main-banner gambar3"></div>
+                    <div class="main-banner gambar4"></div>
+                    <div class="main-banner gambar5"></div>
+                    <div class="main-banner gambar6"></div>
+                </article>
+            </section>
+            <hr>
+            <!-- lokasi -->
+            <section id="lokasi-toko">
+                <header>
+                    <h1>Lokasi Toko</h1>
+                </header>
+                <div class="container-lokasi">
+                    <div>
+                        <div class="lokasi1"></div>
+                        <h4>Jakarta</h4>
+                    </div>
+                    <div>
+                        <div class="lokasi2"></div>
+                        <h4>Palembang</h4>
+                    </div>
+                    <div>
+                        <div class="lokasi3"></div>
+                        <h4>Surabaya</h4>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <!-- Jenis Ikan -->
+            <section id="jenis-ikan">
+                <h1>Jenis Ikan yang dijual</h1>
+                <div class="container-jenis-ikan">
+                        <div class="container-konten1">
+                            <div class="koi"></div>
+                            <article>Koi merukapan ikan hias yang berasal dari Jepang. 
+                            Ikan ini merupakan salah satu ikan hias sulit dipelihara, karna dibutuhkan kondisi air yang khusus. 
+                            Namun, karna warnanya yang indah membuatnya populer.</article>
+                            <a href="https://id.wikipedia.org/wiki/Koi" target="_blank">
+                            <button type="button">Selengkapnya</button>
+                            </a>
+                        </div>
+                        <div class="container-konten2">   
+                            <div class="oscar"></div>
+                            <article>Oscar merupakan ikan predator yang berasal dari Amerika Selatan. 
+                            Ikan ini merupakan salah satu ikan predator yang cukup populer di Indonesia, 
+                            karna mudah berkembang biak dan harganya yang tidak terlalu mahal. 
+                            </article>
+                            <a href="https://id.wikipedia.org/wiki/Ikan_oskar#:~:text=Ikan%20oskar%20(Latin%3A%20Astronotus%20ocellatus,ikan%20konsumsi%20di%20pasar%20lokal." target="_blank">
+                            <button type="button">Selengkapnya</button>
+                            </a>
+                        </div>
+                        <div class="container-konten3">
+                            <div class="p-bass"></div>
+                            <article>P Bass atau Peacock Bass merukapan ikan predator yang berasal dari Amerika Selatan. 
+                            Ikan ini merupakan salah satu ikan predator yang dalam beberapa tahun ini mulai populer di Indonesia. 
+                            Namun, ikan ini sangan ganas sehingga sulit untuk membagi tempat dengan hewan lain terlebih ikan yang lebih kecil..</article>
+                            <a href="https://en.wikipedia.org/wiki/Peacock_bass" target="_blank">
+                            <button type="button">Selengkapnya</button>
+                            </a>
+                        </div>
+                </div>
+            </section>
+            <hr>
+            <!-- lembar pemesanan -->
+            <section id="lembar-pemesanan">
+                <header>
+                    <h1>Pemesanan</h1>    
+                </header>
+                <section>
+                    <div  class="container-form">
+                        <form class="input-form" name="pemesanan" onsubmit="return false">
+                            <div class="label-nama">
+                                <label for="input-name">Nama :</label>
+                                <input type="text" name="input-name" placeholder="Name"/>
+                            </div>
+                            <div class="label-tgl">
+                                <label for="tgl-lahir">Tanggal Lahir :</label>
+                                <input type="date" name="tgl-lahir"/>
+                            </div>
+                            <div class="label-gender">
+                                <label>Jenis Kelamin :</label>
+                                <input type="radio" id="pria" name="jenis-kelamin" value="pria"/>
+                                <label for="pria">Pria</label>
+                                <input type="radio" id="wanita" name="jenis-kelamin" value="wanita">
+                                <label for="wanita">Wanita</label>
+                            </div>
+                            <div class="label-keterangan">
+                                <label for="keterangan">Keterangan Pemesanan :</label>
+                                <textarea name="keterangan" id="keterangan" placeholder="Tulis jenis ikan dan jumlahnya"></textarea>
+                            </div>
+                            <div class="label-alamat">
+                                <label for="alamat">Alamat :</label>
+                                <textarea name="alamat" id="alamat"></textarea>
+                            </div>
+                            <button type="submit" id="submit" onclick="validateform()">Submit</button>
+                        </form>
+                        <div>
+                            <p>Nama : <span id="sender-name"></span></p>
+                            <p>Tanggal Lahir : <span id="sender-birth-date"></span></p>
+                            <p>Jenis Kelamin : <span id="sender-gender"></span></p>
+                            <p>Keterangan Pemesanan : <span id="sender-shop-detail"></span></p>
+                            <p>Alamat : <span id="sender-address"></span></p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <hr>
+        </main>
+        <!-- footer -->
+        <footer class="copyright">
+            <p>Zagas Fisheries 2024</p>
+        </footer>
+      <script src="js\script.js"></script>  
+    </body>
+</html>
+
+ 
